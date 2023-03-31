@@ -1,8 +1,19 @@
-/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./",
+    "baseUrl": "./src/",
+    "paths": {
+      "@assets": ["assets/*"],
+      "@constants" : ["app/constants/index.ts"],
+      "@forms/*" : ["app/modules/forms/*"],
+      "@modals/*" : ["app/modules/modals/*"],
+      "@auth/*" : ["app/modules/auth/*"],
+      "@core/*" : ["app/modules/core/*"],
+      "@layout/*" : ["app/modules/layout/*"],
+      "@shared/*" : ["app/modules/shared/*"],
+      "@organization-shared/*" : ["app/modules/organization-shared/*"],
+      "@text-editor/*" : ["app/modules/text-editor/*"]
+    },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
     "strict": true,
@@ -27,6 +38,7 @@
     "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
     "strictInputAccessModifiers": true,
-    "strictTemplates": true
+    "strictTemplates": true,
+    "allowSyntheticDefaultImports": true
   }
 }

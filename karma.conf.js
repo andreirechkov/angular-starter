@@ -10,8 +10,18 @@ module.exports = function (config) {
       require('karma-chrome-launcher'),
       require('karma-jasmine-html-reporter'),
       require('karma-coverage'),
-      require('@angular-devkit/build-angular/plugins/karma')
+      require('@angular-devkit/build-angular/plugins/karma'),
     ],
+    browsers: ["ChromeHeadless"],
+    customLaunchers: {
+      Headless: {
+        base: 'ChromiumHeadless',
+        flags: [
+          '--no-sandbox',
+          '--disable-setuid-sandbox',
+        ],
+      },
+    },
     client: {
       jasmine: {
         // you can add configuration options for Jasmine here
@@ -25,19 +35,26 @@ module.exports = function (config) {
       suppressAll: true // removes the duplicated traces
     },
     coverageReporter: {
-      dir: require('path').join(__dirname, './coverage/angular'),
+      dir: require('path').join(__dirname, './coverage/werw'),
       subdir: '.',
       reporters: [
         { type: 'html' },
-        { type: 'text-summary' }
-      ]
+        { type: 'text-summary' },
+      ],
+      check: {
+        global: {
+          statements: 20,
+          lines: 20,
+          branches: 0,
+          functions: 0,
+        }
+      }
     },
-    reporters: ['progress', 'kjhtml'],
+    reporters: ['progress', 'kjhtml', 'coverage'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['Chrome'],
     singleRun: false,
     restartOnFileChange: true
   });

@@ -1,0 +1,133 @@
+// colors
+$white: #FFFFFF;
+$black: #000;
+
+$grey-100: #FAFCFE;
+$grey-200: #F6F8FD;
+$grey-300: #F4F7FE;
+$grey-400: #E9EDF7;
+$grey-500: #E0E5F2;
+$grey-600: #A3AED0;
+$grey-700: #707EAE;
+$grey-800: #47548C;
+
+$dark-grey-100: #EFF4FB;
+$dark-grey-200: #E1E9F8;
+$dark-grey-300: #C9D4EA;
+$dark-grey-400: #B0BBD5;
+$dark-grey-500: #8F9BBA;
+$dark-grey-600: #68769F;
+$dark-grey-700: #485585;
+$dark-grey-800: #2D396B;
+$dark-grey-900: #1B2559;
+
+$blue-100: #D3E4FD;
+$blue-200: #BED2FD;
+$blue-300: #7EB2FC;
+$blue-400: #4C81FC;
+$blue-500: #264ADE;
+$blue-600: #0054DA;
+$blue-700: #001C83;
+$blue-800: #2B3674;
+$blue-900: #002251;
+
+$green-100: #E3FFF1;
+$green-200: #BEF5D1;
+$green-300: #8FEDAE;
+$green-400: #59DC83;
+$green-500: #06C270;
+$green-600: #2EA14E;
+$green-700: #267E40;
+$green-800: #206336;
+$green-900: #1B522F;
+
+$orange-100: #FFF8E5;
+$orange-200: #F5E193;
+$orange-300: #FCCC75;
+$orange-400: #FDAC42;
+$orange-500: #FC9726;
+$orange-600: #F17D22;
+$orange-700: #EB6D1E;
+$orange-800: #E2521B;
+$orange-900: #BB381A;
+
+$yellow-100: #FFF8E5;
+$yellow-200: #FEF2C9;
+$yellow-300: #FFF3A2;
+$yellow-400: #FFEE7F;
+$yellow-500: #FFEC65;
+$yellow-600: #FFE94E;
+$yellow-700: #FCD649;
+$yellow-800: #F6A738;
+$yellow-900: #F27F2B;
+
+$red-100: #FFEBEE;
+$red-200: #FDCED3;
+$red-300: #EC9B9B;
+$red-400: #EA5554;
+$red-500: #EF463D;
+$red-600: #E03C3B;
+$red-700: #CF3335;
+$red-800: #C22C2E;
+$red-900: #B32123;
+
+$purple-100: #E9E4FE;
+$purple-200: #B7A6FD;
+$purple-300: #907AFC;
+$purple-400: #725CFB;
+$purple-500: #3D35FB;
+$purple-600: #2E2BD7;
+$purple-700: #1C1DB4;
+$purple-800: #151990;
+$purple-900: #0D1278;
+
+$azure-blue-100: #F0F2FA;
+$azure-blue-200: #00CFDE;
+$azure-blue-400: #69A4FF;
+$azure-blue-500: #3987FF;
+
+$shadow-color-main: rgba(40, 41, 61, 0.04);
+$shadow-color-second: rgba(96, 97, 112, 0.16);
+
+// spacing (padding, margin, gap and ect)
+$space-5: 5px;
+$space-8: 8px;
+$space-10: 10px;
+$space-15: 15px;
+$space-20: 20px;
+$space-25: 25px;
+$space-30: 30px;
+$space-35: 35px;
+$space-40: 40px;
+$space-50: 50px;
+$space-60: 60px;
+$space-70: 70px;
+$space-100: 100px;
+
+$icon-sm-size: 12px;
+$icon-md-size: 16px;
+$input-icon-size: 20px;
+$big-icon-size: 24px;
+
+// radius
+$radius-sm: 4px;
+$radius-md: 8px;
+$radius-lg: 10px;
+$radius-xl: 20px;
+
+//font-weight
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-bold: 700;
+$font-weight-black: 800;
+
+//media query width
+$media-xxl: 1920px;
+$media-xl: 1400px;
+$media-lg: 1280px;
+$media-md: 960px;
+$media-sm: 768px;
+$media-xs: 576px;
+
+// box shadow
+$shadow-help: 0 2px 4px rgba(40, 41, 61, 0.04), 0 8px 16px rgba(96, 97, 112, 0.16);
