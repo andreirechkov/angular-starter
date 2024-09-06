@@ -3,11 +3,6 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: '',
-    loadChildren: () =>
-      import('./pages/organization/organization.module').then((m) => m.OrganizationModule),
-  },
-  {
     path: '**',
     redirectTo: '',
   },
