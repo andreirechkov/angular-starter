@@ -1,18 +1,19 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
-    "baseUrl": "./src/",
+    "baseUrl": ".",
     "paths": {
-      "@assets": ["assets/*"],
-      "@constants" : ["app/constants/index.ts"],
-      "@forms/*" : ["app/modules/forms/*"],
-      "@modals/*" : ["app/modules/modals/*"],
-      "@auth/*" : ["app/modules/auth/*"],
-      "@core/*" : ["app/modules/core/*"],
-      "@layout/*" : ["app/modules/layout/*"],
-      "@shared/*" : ["app/modules/shared/*"],
-      "@organization-shared/*" : ["app/modules/organization-shared/*"],
-      "@text-editor/*" : ["app/modules/text-editor/*"]
+      "@assets": ["src/assets/*"],
+      "@animations": ["src/app/animations/index.ts"],
+      "@constants" : ["src/app/constants/index.ts"],
+      "@forms/*" : ["src/app/modules/forms/*"],
+      "@auth/*" : ["src/app/modules/auth/*"],
+      "@core/*" : ["src/app/modules/core/*"],
+      "@layout/*" : ["src/app/modules/layout/*"],
+      "@shared/*" : ["src/app/modules/shared/*"],
+      "@permission/*" : ["src/app/modules/permission/*"],
+      "@translate/*" : ["src/app/modules/translate/*"]
     },
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,
@@ -27,10 +28,11 @@
     "experimentalDecorators": true,
     "moduleResolution": "node",
     "importHelpers": true,
-    "target": "es2020",
-    "module": "es2020",
+    "target": "ES2022",
+    "module": "ES2022",
+    "useDefineForClassFields": false,
     "lib": [
-      "es2020",
+      "ES2022",
       "dom"
     ]
   },
