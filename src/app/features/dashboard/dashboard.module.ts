@@ -6,6 +6,7 @@ import { DashboardPageComponent } from './pages';
 import { HeaderSectionComponent, ContentSectionComponent } from './components';
 import { WidgetManagerService } from './services';
 import { WidgetDataService } from './services/widget-data.service';
+import { ExtendedButtonComponent } from '../../libs/shared/components';
 
 @NgModule({
   declarations: [DashboardPageComponent],
@@ -15,6 +16,7 @@ import { WidgetDataService } from './services/widget-data.service';
     HeaderSectionComponent,
     ContentSectionComponent,
     MatDialogModule,
+    ExtendedButtonComponent,
   ],
   providers: [WidgetManagerService, WidgetDataService],
 })

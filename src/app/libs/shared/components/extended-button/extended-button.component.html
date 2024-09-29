@@ -1,0 +1,6 @@
+<div
+  *hasPermission="permission"
+  [matTooltip]="(viewerTooltip$ | async) || ''"
+  [matTooltipDisabled]="(disabledTooltip$ | async) || false">
+  <ng-content></ng-content>
+</div>
