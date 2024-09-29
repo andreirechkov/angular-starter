@@ -1,0 +1,6 @@
+<div class="flex flex-wrap justify-center gap-7" *ngIf="widgets$ | async as widgets">
+  <div *ngFor="let widget of widgets">
+    <app-action-content [widget]="widget" />
+    <div chart [options]="widget"></div>
+  </div>
+</div>
